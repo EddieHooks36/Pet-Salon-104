@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/mystyle.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,6 +18,7 @@
 
 <div class="container">
       <h2>Register a new pet</h2>
+      <p class="text-end" id="txtAmount">Pet Total</p>
 
     <div class="mb-3">
       <label class="form-label">Name:</label>
@@ -43,9 +45,17 @@
         </select>    
     </div>
 
+    
     <button class="btn btn-dark" onclick="register();">Register</button>
+    <!--<button class="btn btn-dark" onclick="hide();">Go</button>-->
 </div >
     
+    <!--Display the pets here-->
+    <div id="pets">
+
+    </div>
+
+<script src="scripts/display.js"></script>
 <script src="scripts/register.js"></script>
 </body>
 </html>
