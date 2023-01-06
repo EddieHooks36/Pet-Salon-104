@@ -8,3 +8,7 @@
     border: 1px solid gray;
     padding: 10px;
 }
+
+.alert-error{
+    border: 1px solid red;
+}

@@ -7,12 +7,13 @@ function dsiplayPetCards(){
         let pet = petSalon.pets[i];
         //create template string
         card += `
-        <div class="petCard">
+        <div id="${pet.id}" class="petCard">
               <h4>Name: ${pet.name}</h4>
               <p>Age: ${pet.age}</p>
               <p>Gender: ${pet.gender}</p>
               <p>Breed: ${pet.breed}</p>
               <p>Service: ${pet.service}</p>
+              <button onclick="deletePet(${pet.id});">Delete</button>
         </div>
         `;
 
