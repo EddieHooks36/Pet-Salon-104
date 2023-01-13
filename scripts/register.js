@@ -28,15 +28,6 @@ function Pet (name, age, gender, breed, service, owner, phone) {
         this.id=c++;
 }
 
-
-let inputName = document.getElementById("txtName");
-let inputAge = document.getElementById("txtAge");
-let inputGender = document.getElementById("txtGender");
-let inputBreed = document.getElementById("txtBreed");
-let inputService = document.getElementById("txtService");
-let inputOwner = document.getElementById("txtOwners");
-let inputPhone = document.getElementById("txtPhone");
-
 function validatePet(thePet){
     let validation=true;
     inputName.classList.remove("alert-error");
@@ -59,12 +50,24 @@ function validatePet(thePet){
     return validation;
 }
 
+let inputName = document.getElementById("txtName");
+let inputAge = document.getElementById("txtAge");
+let inputGender = document.getElementById("txtGender");
+let inputBreed = document.getElementById("txtBreed");
+let inputService = document.getElementById("txtService");
+let inputOwner = document.getElementById("txtOwner");
+let inputPhone = document.getElementById("txtPhone");
+
+
+
+
 function register(){
     //get values from the html
     // console.log(inputName.value, inputAge.value);
     //create new objects
 
     let newPet = new Pet (inputName.value, inputAge.value, inputGender.value, inputBreed.value, inputService.value, inputOwner.value, inputPhone.value);
+    
     if(validatePet(newPet)==true){
     //the pet was valid
     //push it to the array
@@ -82,10 +85,12 @@ function register(){
 
 function clearForm(){
     inputName.value = "";
-    inputAge.value = 0;
+    inputAge.value = "";
     inputGender.value = "";
     inputBreed.value = "";
     inputService.value = "";
+    inputOwner.value="";
+    inputPhone.value="";
 }
 function deletePet(id){
     console.log("deleting pet" + id);
@@ -115,7 +120,7 @@ function init(){
 
     petSalon.pets.push(scooby, gigi, scrappy); //adding the pet to the array
     displayInfo();
-    dsiplayPetCards();
+    displayPetCards();
 }
 
 

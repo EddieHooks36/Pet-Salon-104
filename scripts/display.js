@@ -1,4 +1,4 @@
-function dsiplayPetCards(){
+function displayPetCards(){
     //select the pet section by Id
     let petSection = document.getElementById("pets");
     let card ="";
