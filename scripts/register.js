@@ -114,11 +114,11 @@ function displayInfo(){
 
 }
 function init(){
-    let scooby = new Pet("Scooby",50,"Male","Dane","Grooming","Shaggy","111-111-1111"); //creating the object
-    let gigi = new Pet("Gigi",12,"Female","Rotweiler","Grooming","Eddie","111-111-1111");
-    let scrappy = new Pet("Scrappy", 3 , "male", "Dane", "Bathe","shaggy","111-111-1111");
+    // let scooby = new Pet("Scooby",50,"Male","Dane","Grooming","Shaggy","111-111-1111"); //creating the object
+    // let gigi = new Pet("Gigi",12,"Female","Rotweiler","Grooming","Eddie","111-111-1111");
+    // let scrappy = new Pet("Scrappy", 3 , "male", "Dane", "Bathe","shaggy","111-111-1111");
 
-    petSalon.pets.push(scooby, gigi, scrappy); //adding the pet to the array
+    petSalon.pets.push(); //adding the pet to the array //scooby, gigi, scrappy
     displayInfo();
     displayPetCards();
 }
